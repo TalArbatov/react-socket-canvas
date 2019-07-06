@@ -5,6 +5,10 @@ import io from 'socket.io-client'
 import config from '../../../config';
 const socketURL = config.socketURI
 
+const CanvasWrapper = styled.div`
+    overflow:hidden;
+    height:100%;
+`
 
 class Canvas extends Component {
   state = {
@@ -159,9 +163,9 @@ class Canvas extends Component {
 
   render() {
     return (
-      <div>
+      <CanvasWrapper>
         <canvas ref="myCanvas" />
-      </div>
+      </CanvasWrapper>
     );
   }
 }
