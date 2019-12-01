@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Color from "./Color";
-const colors = ["black", "grey", 'red', 'orange', 'blue'];
+const colors = ["black", "grey", 'red', 'orange', 'blue', 'green', 'purple', 'pink', 'brown'];
+
 
 const Wrapper = styled.div`
   display: flex;
