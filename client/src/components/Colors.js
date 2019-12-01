@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Color from "./Color";
-const colors = ["black", "grey", 'red', 'orange', 'blue', 'green', 'purple', 'pink', 'brown'];
+const colors = ["black", "grey", 'red', 'orange', 'blue', 'green', 'purple', 'pink', 'brown', 'lightgreen', 'lightblue', 'white', 'cyan'];
 
 
 const Wrapper = styled.div`
