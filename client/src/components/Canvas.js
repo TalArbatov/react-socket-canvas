@@ -113,8 +113,12 @@ class Canvas extends Component {
     });
     this.newContext.strokeStyle = color;
     this.newContext.lineJoin = "round";
-    this.newContext.lineWidth = 5;
-
+    if(this.props.size === 'small')
+      this.newContext.lineWidth = 5;
+    if(this.props.size === 'medium')
+      this.newContext.lineWidth = 10;
+    if(this.props.size === 'big')
+      this.newContext.lineWidth = 20;
     this.newContext.beginPath();
     this.newContext.moveTo(secondX, secondY);
     this.newContext.lineTo(firstX, firstY);

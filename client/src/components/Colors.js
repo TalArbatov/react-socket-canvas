@@ -16,6 +16,9 @@ const Colors = props => {
       {colors.map((color, index) => {
         return <Color changeColor={props.changeColor} key={index} color={color} />;
       })}
+      <button onClick={() => props.changeSize('small')}>small</button>
+      <button onClick={() => props.changeSize('medium')}>medium</button>
+      <button onClick={() => props.changeSize('big')}>big</button>
     </Wrapper>
   );
 };

@@ -7,7 +7,7 @@ import io from 'socket.io-client';
 class App extends React.PureComponent {
     state = {
         color: 'black',
-     
+        size: 'small'
     }
   
    
@@ -16,8 +16,8 @@ class App extends React.PureComponent {
     render() {
         return(
             <div>
-                <Colors changeColor={color => this.setState({color})}></Colors>
-                <Canvas  color={this.state.color}/>
+                <Colors changeSize={size => this.setState({size})} changeColor={color => this.setState({color})}></Colors>
+                <Canvas  color={this.state.color} size={this.state.size}/>
             </div>
         )
     }
